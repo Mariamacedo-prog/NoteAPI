@@ -18,8 +18,19 @@ module.exports = {
 
     res.json(json);
   },
-  one: (req, res) => {},
-  new: (req, res) => {},
-  edit: (req, res) => {},
-  delete: (req, res) => {},
+  one: async (req, res) => {
+    let json = { error: "", result: {} };
+
+    let id = req.params.id;
+    let note = await NoteService.findById(id);
+
+    if (note) {
+      json.result = note;
+    }
+
+    res.json(json);
+  },
+  new: async (req, res) => {},
+  edit: async (req, res) => {},
+  delete: async (req, res) => {},
 };
