@@ -1,4 +1,4 @@
-DEVSNOTES: SISTEMA DE ANOTAÇÕES SISMPLES
+DEVSNOTES: SISTEMA DE ANOTAÇÕES SIMPLES
 O que o projeto precisa fazer?
 -Listar anotações.
 -Pegar informações de UMA anotação.
@@ -19,3 +19,8 @@ Quais os endpoints?
 -(POST) /api/notes (title, body)
 -(PUT) /api/note/123 (title, body)
 -(DELETE) /api/note/123
+
+Online JSON viewer:
+http://jsonviewer.stack.hu/
+rest test test:
+https://resttesttest.com/
